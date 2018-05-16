@@ -6,7 +6,6 @@
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t mittey/kek123 .
-      - docker tag mittey/kek123 mittey/kek123 .
   post_build:
     commands:
       - echo Build completed on `date`
