@@ -6,6 +6,6 @@ export default class SampleController {
     }
 
     public hello(req: Request, res: Response, next: NextFunction): void {
-        res.json({ response: "hello world" });
+        res.json({ response: "hello world UPDATED 123 !!!!!!" });
     }
 }
