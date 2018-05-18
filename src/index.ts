@@ -5,7 +5,7 @@ import App from './server';
 
 debug('ts-express:server');
 
-const port = normalizePort(process.env.PORT || 3000);
+const port = normalizePort(process.env.PORT || 3333);
 console.log('App is working on port: ' + port);
 App.set('port', port);
 

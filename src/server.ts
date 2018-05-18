@@ -2,6 +2,7 @@ import * as path from 'path';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import Routes from './routes';
+import * as cors from 'cors';
 
 
 // Creates and configures an ExpressJS web server.
@@ -24,6 +25,7 @@ class App {
   private middleware(): void {
     this.express.use(bodyParser.json());
     this.express.use(bodyParser.urlencoded({ extended: false }));
+    this.express.use(cors());
   }
 }
 
