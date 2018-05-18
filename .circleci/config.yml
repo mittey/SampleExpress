@@ -7,4 +7,4 @@ jobs:
        - checkout
        - run: echo "hello world"
        - run: echo $DOCKER_USER
-       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS 
+       - run: docker login -u $DOCKER_USER --password-stdin $DOCKER_PASS 
